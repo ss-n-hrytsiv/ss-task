@@ -1,6 +1,3 @@
-import task_87, task_226, task_559, task322, task88_v_g
-
-
 # task88a check does number 3 in our n^2
 def task_88a():
     n = input("Check does number 3 in n^2\n\n"
@@ -33,20 +30,3 @@ def task330():
     return list_of_numbers
 
 
-if __name__ == "__main__":
-    choice_task = input("Enter the name of tasks(ex. task_88a, ex. task_88b): ")
-    choice_task = choice_task.lower()
-    choice_task_dict = {
-        "task_88a": task_88a,
-        "task_88b": task_88b,
-        "task_330": task330,
-        "task_87": task_87.task_87,
-        "task_226": task_226.task_226,
-        "task_559": task_559.task_559,
-        "task322": task322.main,
-        "task88_v_g": task88_v_g.main
-    }
-    try:
-        print(choice_task_dict[choice_task]())
-    except KeyError as e:
-        raise ValueError('Undefined unit: {}'.format(e.args[0]))
