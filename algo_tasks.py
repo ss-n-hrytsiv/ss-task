@@ -42,3 +42,6 @@ def task_num_243_b():
     if len(res) == 0:
         return "This number cannot be represented as the sum of two squares"
     return res
+
+
+

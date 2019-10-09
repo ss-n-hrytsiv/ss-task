@@ -1,5 +1,4 @@
 import unittest
-
 from algo_tasks import task_num_243_b, task_num_243_a, task_num_107
 from unittest.mock import patch
 
