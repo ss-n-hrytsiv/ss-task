@@ -16,6 +16,8 @@ from tasks.task_331_b import task_331_b
 from tasks.task_num_107 import task_num_107
 from tasks.task_num_243_b import task_num_243_b
 from tasks.task_num_243_a import task_num_243_a
+from tasks.task178_4 import get_elements_less_arithmetic_mean_of_its_neighbor
+from tasks.task178_5 import get_elements_by_condition
 
 if __name__ == "__main__":
     print("Choose and write one from the task below")
@@ -25,6 +27,8 @@ if __name__ == "__main__":
         "task_330": task330,
         "task_108": task_108,
         "task_88_vg": main,
+        "task_178_4": get_elements_less_arithmetic_mean_of_its_neighbor,
+        "task_178_5": get_elements_by_condition,
         "task_178": task178_menu,
         "task_554": task554_menu,
         "task_332": task332_menu,
