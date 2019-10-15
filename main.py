@@ -19,6 +19,7 @@ from tasks.task_num_243_a import task_num_243_a
 from tasks.task178_4 import get_elements_less_arithmetic_mean_of_its_neighbor
 from tasks.task178_5 import get_elements_by_condition
 
+
 if __name__ == "__main__":
     print("Choose and write one from the task below")
     choice_task_dict = {
@@ -48,7 +49,7 @@ if __name__ == "__main__":
     choice_task = input("Enter the name of tasks(ex. task_88a, ex. task_88b): ")
     choice_task = choice_task.lower()
     try:
-        # choice_task_dict[choice_task]()
         print(choice_task_dict[choice_task]())
     except KeyError as e:
         raise ValueError('Undefined unit: {}'.format(e.args[0]))
+    input()
