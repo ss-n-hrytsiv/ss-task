@@ -1,7 +1,7 @@
 from tasks.task_88a_b import task88_a_b_menu
 from tasks.task_86_b import task_86_b
-from tasks.task_86_a import task_86_a
-from tasks.task_330 import task330
+from tasks.task_86_a import task86_a_b_menu
+from tasks.task_330 import task_330_menu
 from tasks.task178 import task178_menu
 from tasks.task554 import task554_menu
 from tasks.task332 import task332_menu
@@ -23,9 +23,9 @@ from tasks.task178_5 import get_elements_by_condition
 if __name__ == "__main__":
     print("Choose and write one from the task below")
     choice_task_dict = {
-        "task_86_a": task_86_a,
+        "task_86": task86_a_b_menu,
         "task_86_b": task_86_b,
-        "task_330": task330,
+        "task_330": task_330_menu,
         "task_108": task_108,
         "task_88_vg": main,
         "task_178_4": get_elements_less_arithmetic_mean_of_its_neighbor,
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     choice_task = input("Enter the name of tasks(ex. task_88a, ex. task_88b): ")
     choice_task = choice_task.lower()
     try:
-        print(choice_task_dict[choice_task]())
+        choice_task_dict[choice_task]()
     except KeyError as e:
         raise ValueError('Undefined unit: {}'.format(e.args[0]))
     input()

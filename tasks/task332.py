@@ -29,5 +29,5 @@ def task332_menu():
         print("Wrong input!")
 
 
-# if __name__ == '__task332_menu__':
+# if __name__ == '__task332_menu__':е
 #     task332_menu()

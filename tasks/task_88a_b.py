@@ -24,6 +24,7 @@ def reverse_number(number):
     #     number=number//10
     # return reversed_num
 
+
 def represent_function(function, function_doc, user_choice):
     while True:
         print('*' * 100)

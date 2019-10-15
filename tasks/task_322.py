@@ -11,6 +11,7 @@ def max_sum_dividers():
     
     return max(sums, key=sums.get)
 
+
 def represent_function(function, function_doc):
     while True:
         print('*' * 100)
