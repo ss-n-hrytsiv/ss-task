@@ -1,4 +1,4 @@
-from tasks.task_88a_b import is_3_in_nn, reverse_number
+from tasks.task_88a_b import task88_a_b_menu
 from tasks.task_86_b import task_86_b
 from tasks.task_86_a import task_86_a
 from tasks.task_330 import task330
@@ -10,7 +10,7 @@ from tasks.task555 import get_pascal_triangle
 from tasks.task_87 import task_87
 from tasks.task_108 import task_108
 from tasks.task_226 import task_226
-from tasks.task_322 import max_sum_dividers
+from tasks.task_322 import task_322_menu
 from tasks.task_331_a import task_331_a
 from tasks.task_331_b import task_331_b
 from tasks.task_num_107 import task_num_107
@@ -34,10 +34,9 @@ if __name__ == "__main__":
         "task_332": task332_menu,
         "task_555": get_pascal_triangle,
         "task_87": task_87,
-        "task_88_a": is_3_in_nn,
-        "task_88_b": reverse_number,
+        "task_88": task88_a_b_menu,
         "task_226": task_226,
-        "task_322": max_sum_dividers,
+        "task_322": task_322_menu,
         "task_331_a": task_331_a,
         "task_331_b": task_331_b,
         "task_num_107": task_num_107,
