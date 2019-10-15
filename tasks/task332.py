@@ -22,12 +22,15 @@ def lagrange(digit):
 def task332_menu():
     """Main function to execute this module"""
     print(__doc__)
-    try:
-        user_input = int(input("Enter your digit: "))
-        return lagrange(user_input)
-    except ValueError:
-        print("Wrong input!")
-
-
-# if __name__ == '__task332_menu__':е
-#     task332_menu()
+    print(f"""If you want to terminate this app, please enter your input as 'q', 'quit', 'exit',
+'stop' or 'terminate'""")
+    while True:
+        user_input = input("Enter your digit: ")
+        try:
+            print(lagrange(int(user_input)))
+            continue
+        except ValueError:
+            if user_input.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
+                quit("Exiting...")
+            print("Wrong input!")
+            continue
