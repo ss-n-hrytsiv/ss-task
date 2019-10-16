@@ -6,7 +6,7 @@ from tasks.task178 import task178_menu
 from tasks.task554 import task554_menu
 from tasks.task332 import task332_menu
 from tasks.task88vg import main
-from tasks.task555 import get_pascal_triangle
+from tasks.task555 import task_555_menu
 from tasks.task_87 import task_87
 from tasks.task_108 import task_108
 from tasks.task_226 import task_226
@@ -16,8 +16,8 @@ from tasks.task_331_b import task_331_b
 from tasks.task_num_107 import task_num_107
 from tasks.task_num_243_b import task_num_243_b
 from tasks.task_num_243_a import task_num_243_a
-from tasks.task178_4 import get_elements_less_arithmetic_mean_of_its_neighbor
-from tasks.task178_5 import get_elements_by_condition
+from tasks.task178_4 import task_178_4_menu
+from tasks.task178_5 import task_178_5_menu
 
 
 if __name__ == "__main__":
@@ -28,12 +28,12 @@ if __name__ == "__main__":
         "task_330": task_330_menu,
         "task_108": task_108,
         "task_88_vg": main,
-        "task_178_4": get_elements_less_arithmetic_mean_of_its_neighbor,
-        "task_178_5": get_elements_by_condition,
+        "task_178_4": task_178_4_menu,
+        "task_178_5": task_178_5_menu,
         "task_178": task178_menu,
         "task_554": task554_menu,
         "task_332": task332_menu,
-        "task_555": get_pascal_triangle,
+        "task_555": task_555_menu,
         "task_87": task_87,
         "task_88": task88_a_b_menu,
         "task_226": task_226,
