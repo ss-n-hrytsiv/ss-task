@@ -11,8 +11,7 @@ def task_331_a(input_data):
     то указать тройку x, y, z таких натуральных чисел, что
     n = x^2 + y^2 + z^2
     """
-    try:
-        input_data = int(input_data)
+    if isinstance(input_data, int):
         if input_data > 0:
 
             for x_arg in range(input_data + 1):
@@ -26,8 +25,8 @@ def task_331_a(input_data):
         else:
             return 'n must be bigger than 0'
 
-    except ValueError:
-        raise Exception
+    else:
+        raise Exception('Type integer')
 
 
 def task_331_a_menu():

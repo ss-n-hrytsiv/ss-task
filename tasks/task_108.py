@@ -9,8 +9,7 @@ def task_108(input_data):
     Дано натуральное число n. Получить наименьшее число
     вида 2^r , превосходящее n.
     """
-    try:
-        input_data = int(input_data)
+    if isinstance(input_data, int):
         if input_data > 0:
             for i in range(input_data + 1):
                 two_to_i_power = 2 ** i
@@ -18,8 +17,8 @@ def task_108(input_data):
                     return two_to_i_power
         else:
             return 'n must be bigger than 0'
-    except ValueError:
-        return 'Type integer'
+    else:
+        raise Exception('Type integer')
 
 
 def task_108_menu():

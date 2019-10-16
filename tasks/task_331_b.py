@@ -12,9 +12,7 @@ def task_331_b(input_data):
     n = x^2 + y^2 + z^2 .
     """
 
-    try:
-        input_data = int(input_data)
-
+    if isinstance(input_data, int):
         if input_data > 0:
 
             output = []
@@ -27,8 +25,8 @@ def task_331_b(input_data):
             return output
         else:
             return 'n must be bigger than 0'
-    except ValueError:
-        raise Exception
+    else:
+        raise Exception('Type integer')
 
 
 def task_331_b_menu():
