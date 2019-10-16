@@ -4,14 +4,13 @@ author: Andrew Stanishevskyi
 """
 
 
-def task_331_b():
+def task_331_b(input_data):
     """
     Дано натуральное число n. Можно ли представить его в
     виде суммы трех квадратов натуральных чисел? Если можно, то
     указать все тройки x, y, z таких натуральных чисел, что
     n = x^2 + y^2 + z^2 .
     """
-    input_data = input("Enter n: ")
 
     try:
         input_data = int(input_data)
@@ -29,4 +28,20 @@ def task_331_b():
         else:
             return 'n must be bigger than 0'
     except ValueError:
-        return 'Type integer'
+        raise Exception
+
+
+def task_331_b_menu():
+    print('-' * 100)
+    print(f'Function logic:\n{task_331_b.__doc__}')
+    print('-' * 50)
+    print("Input some integer number:\n")
+    try:
+        input_data = int(input())
+        print(f'Result: {task_331_b(input_data)}')
+    except Exception as error:
+        print(f'{error}. Try again!'.title())
+
+
+if __name__ == '__main__':
+    task_331_b_menu()

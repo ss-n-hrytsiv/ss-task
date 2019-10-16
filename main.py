@@ -8,11 +8,11 @@ from tasks.task332 import task332_menu
 from tasks.task88vg import main
 from tasks.task555 import task_555_menu
 from tasks.task_87 import task_87
-from tasks.task_108 import task_108
+from tasks.task_108 import task_108_menu
 from tasks.task_226 import task_226
 from tasks.task_322 import task_322_menu
-from tasks.task_331_a import task_331_a
-from tasks.task_331_b import task_331_b
+from tasks.task_331_a import task_331_a_menu
+from tasks.task_331_b import task_331_b_menu
 from tasks.task_num_107 import task_num_107
 from tasks.task_num_243_b import task_num_243_b
 from tasks.task_num_243_a import task_num_243_a
@@ -26,7 +26,7 @@ if __name__ == "__main__":
         "task_86": task86_a_b_menu,
         "task_86_b": task_86_b,
         "task_330": task_330_menu,
-        "task_108": task_108,
+        "task_108": task_108_menu,
         "task_88_vg": main,
         "task_178_4": task_178_4_menu,
         "task_178_5": task_178_5_menu,
@@ -38,8 +38,8 @@ if __name__ == "__main__":
         "task_88": task88_a_b_menu,
         "task_226": task_226,
         "task_322": task_322_menu,
-        "task_331_a": task_331_a,
-        "task_331_b": task_331_b,
+        "task_331_a": task_331_a_menu,
+        "task_331_b": task_331_b_menu,
         "task_num_107": task_num_107,
         "task_num_243_a": task_num_243_a,
         "task_num_243_b": task_num_243_b
