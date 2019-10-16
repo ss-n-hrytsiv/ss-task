@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-__author__ = 'Maks Ivanov'
 
-def task_num_107():
-    """ Дано целое число m > 1 Получить наибольшое целое к, при котором 4^к < m """
-    m = int(input('\'Task 107\' Input your natural number : '))
-=======
 """ We have a natural number m > 1. Get the greatest integer k, at which 4^k < m
 """
 
@@ -13,7 +7,7 @@ def task_num_107(abra):
     """ Дано целое число m > 1 Получить наибольшое целое к, при котором 4^к < m
         (We have a natural number m > 1. Get the greatest integer k, at which 4^k < m)
     """
->>>>>>> 3468b88d7dfd3d50d7f9453c5e67e1fc71210f9e
+
     counter = 1
     a = 4
     while a < abra:

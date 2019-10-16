@@ -13,9 +13,9 @@ from tasks.task_226 import task_226_menu
 from tasks.task_322 import task_322_menu
 from tasks.task_331_a import task_331_a_menu
 from tasks.task_331_b import task_331_b_menu
-from tasks.task_num_107 import task107_menu
-from tasks.task_num_243_b import task243_b_menu
-from tasks.task_num_243_a import task243_a_menu
+from tasks.task_num_107 import task_num_107
+from tasks.task_num_243_b import task_num_243_b
+from tasks.task_num_243_a import task_num_243_a
 from tasks.task178_4 import task_178_4_menu
 from tasks.task178_5 import task_178_5_menu
 from tasks.task_559 import task_559_menu
@@ -27,7 +27,6 @@ if __name__ == "__main__":
 
 
         choice_task_dict = {
-<<<<<<< HEAD
             "task_86": (task86_a_b_menu, 'Nazar Hrytsiv       '),
             "task_330": (task_330_menu, 'Nazar Hrytsiv       '),
             "task_108": (task_108_menu, "Andrii Stanishevs'kyi"),
@@ -48,33 +47,8 @@ if __name__ == "__main__":
             "task_num_107": (task_num_107, 'Maks Ivanov       '),
             "task_num_243_a": (task_num_243_a, 'Maks Ivanov       '),
             "task_num_243_b": (task_num_243_b, 'Maks Ivanov       '),
-=======
-            "task_86": task86_a_b_menu,
-            "task_86_b": task_86_b,
-            "task_330": task_330_menu,
-            "task_108": task_108_menu,
-            "task_88_vg": main,
-            "task_178_4": task_178_4_menu,
-            "task_178_5": task_178_5_menu,
-            "task_178": task178_menu,
-            "task_554": task554_menu,
-            "task_559": task_559_menu,
-            "task_332": task332_menu,
-            "task_555": task_555_menu,
-            "task_87": task_87_menu,
-            "task_88": task88_a_b_menu,
-            "task_226": task_226_menu,
-            "task_322": task_322_menu,
-            "task_331_a": task_331_a_menu,
-            "task_331_b": task_331_b_menu,
-            "task_num_107": task107_menu,
-            "task_num_243_a": task243_a_menu,
-            "task_num_243_b": task243_b_menu
->>>>>>> 3468b88d7dfd3d50d7f9453c5e67e1fc71210f9e
         }
-        
-        # [print(x) for x in choice_task_dict.keys()]
-
+   
         
 
         for index, key in enumerate(choice_task_dict.keys()):
