@@ -13,9 +13,9 @@ from tasks.task_226 import task_226_menu
 from tasks.task_322 import task_322_menu
 from tasks.task_331_a import task_331_a_menu
 from tasks.task_331_b import task_331_b_menu
-from tasks.task_num_107 import task_num_107
-from tasks.task_num_243_b import task_num_243_b
-from tasks.task_num_243_a import task_num_243_a
+from tasks.task_num_107 import task107_menu
+from tasks.task_num_243_b import task243_b_menu
+from tasks.task_num_243_a import task243_a_menu
 from tasks.task178_4 import task_178_4_menu
 from tasks.task178_5 import task_178_5_menu
 from tasks.task_559 import task_559_menu
@@ -43,9 +43,9 @@ if __name__ == "__main__":
             "task_322": task_322_menu,
             "task_331_a": task_331_a_menu,
             "task_331_b": task_331_b_menu,
-            "task_num_107": task_num_107,
-            "task_num_243_a": task_num_243_a,
-            "task_num_243_b": task_num_243_b
+            "task_num_107": task107_menu,
+            "task_num_243_a": task243_a_menu,
+            "task_num_243_b": task243_b_menu
         }
         [print(x) for x in choice_task_dict.keys()]
         choice_task = input("Enter the name of tasks(ex. task_88a, ex. task_88b): ")
