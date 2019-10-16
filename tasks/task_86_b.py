@@ -1,3 +1,5 @@
+__author__ = 'Nazar Hrytsiv'
+
 '''Task 86_b: Have a natural number n count the sum of all digits in number n'''
 
 

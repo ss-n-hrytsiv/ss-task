@@ -7,6 +7,7 @@ Task 02.
 целых чисел (теорема Лагранжа). Дано натуральное n; указать такие
 неотрицательные x, y, z, t , что n = x^2 + y^2 + z^2 + t^2 .
 """
+__author__ = 'Oleksandr Krynytskyi'
 
 
 def lagrange(digit):

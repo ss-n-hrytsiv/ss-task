@@ -23,35 +23,49 @@ from tasks.task_559 import task_559_menu
 
 if __name__ == "__main__":
     while True:
-        print("Choose and write one from the task below")
+        print("\n\n Choose and write one from the task below \n\n")
+
+
         choice_task_dict = {
-            "task_86": task86_a_b_menu,
-            "task_86_b": task_86_b,
-            "task_330": task_330_menu,
-            "task_108": task_108_menu,
-            "task_88_vg": main,
-            "task_178_4": task_178_4_menu,
-            "task_178_5": task_178_5_menu,
-            "task_178": task178_menu,
-            "task_554": task554_menu,
-            "task_559": task_559_menu,
-            "task_332": task332_menu,
-            "task_555": task_555_menu,
-            "task_87": task_87_menu,
-            "task_88": task88_a_b_menu,
-            "task_226": task_226_menu,
-            "task_322": task_322_menu,
-            "task_331_a": task_331_a_menu,
-            "task_331_b": task_331_b_menu,
-            "task_num_107": task_num_107,
-            "task_num_243_a": task_num_243_a,
-            "task_num_243_b": task_num_243_b
+            "task_86": (task86_a_b_menu, 'Nazar Hrytsiv       '),
+            "task_330": (task_330_menu, 'Nazar Hrytsiv       '),
+            "task_108": (task_108_menu, "Andrii Stanishevs'kyi"),
+            "task_331_a": (task_331_a_menu, "Andrii Stanishevs'kyi"),
+            "task_331_b": (task_331_b_menu, "Andrii Stanishevs'kyi"),
+            "task_88_vg": (main, 'Oleksandr Krynytskyi'),
+            "task_332": (task332_menu, 'Oleksandr Krynytskyi'),
+            "task_178_4": (task_178_4_menu, 'Valentyn Malenchak'),
+            "task_178_5": (task_178_5_menu, 'Valentyn Malenchak'),
+            "task_555": (task_555_menu, 'Valentyn Malenchak'),
+            "task_178": (task178_menu, 'Stanislav Hrytcyshyn'),
+            "task_554": (task554_menu, 'Stanislav Hrytcyshyn'),
+            "task_559": (task_559_menu, 'Orest Furda       '),
+            "task_226": (task_226_menu, 'Orest Furda       '),
+            "task_87": (task_87_menu, 'Orest Furda       '),
+            "task_88": (task88_a_b_menu, 'Marta Kozak       '),
+            "task_322": (task_322_menu, 'Marta Kozak       '),
+            "task_num_107": (task_num_107, 'Maks Ivanov       '),
+            "task_num_243_a": (task_num_243_a, 'Maks Ivanov       '),
+            "task_num_243_b": (task_num_243_b, 'Maks Ivanov       '),
         }
-        [print(x) for x in choice_task_dict.keys()]
+        
+        # [print(x) for x in choice_task_dict.keys()]
+
+        
+
+        for index, key in enumerate(choice_task_dict.keys()):
+            print(choice_task_dict[key][1], '\t\t---\t\t', key, '\n')
+            
+        
+        print('\n\n')
+            
+
         choice_task = input("Enter the name of tasks(ex. task_88a, ex. task_88b): ")
         choice_task = choice_task.lower()
         try:
-            choice_task_dict[choice_task]()
+            choice_task_dict[choice_task][0]()
         except KeyError as e:
             raise ValueError('Undefined unit: {}'.format(e.args[0]))
         
+
+

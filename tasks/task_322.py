@@ -1,3 +1,5 @@
+__author__ = 'Marta Kozak'
+
 def max_sum_dividers():
     '''find a natural number in [1, 10000 with a maximum sum of it's dividers'''
 

@@ -1,3 +1,6 @@
+__author__ = 'Nazar Hrytsiv'
+
+
 def task_86_a(n):
     """Task 86_a: Have a natural number n how many digits in this number n"""
 

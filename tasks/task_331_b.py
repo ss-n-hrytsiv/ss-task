@@ -2,6 +2,7 @@
 python 3.7
 author: Andrew Stanishevskyi
 """
+__author__ = "Andrii Stanishevs'kyi"
 
 
 def task_331_b(input_data):

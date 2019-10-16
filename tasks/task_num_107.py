@@ -1,3 +1,5 @@
+__author__ = 'Maks Ivanov'
+
 def task_num_107():
     """ Дано целое число m > 1 Получить наибольшое целое к, при котором 4^к < m """
     m = int(input('\'Task 107\' Input your natural number : '))

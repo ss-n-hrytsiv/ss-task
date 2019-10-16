@@ -1,6 +1,7 @@
 # Дано натуральне число n.
 # a) з'ясувати, чи входить цифра 3 в запис числа n^2
 # b) змінити порядок цифр числа n на зворотній
+__author__ = 'Marta Kozak'
 
 def is_3_in_nn(number):
     '''find out whether '3' is in a number's square'''

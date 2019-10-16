@@ -1,3 +1,5 @@
+__author__ = 'Nazar Hrytsiv'
+
 def task330():
     """Task 330 Have a number n. find all ideal number lower then n"""
 
