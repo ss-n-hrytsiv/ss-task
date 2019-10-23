@@ -40,7 +40,7 @@ def find_squares_of_even_numbers(input_list):
     except TypeError:
         return 'Argument should be an iterable object'
 
-    return len(list(filter(lambda x: math.sqrt(x) % 2 == 0, input_list)))
+    return len(list(filter(lambda x: x ** 2 % 2 == 0, input_list)))
 
 
 def represent_function(function, function_doc, resulted_text):

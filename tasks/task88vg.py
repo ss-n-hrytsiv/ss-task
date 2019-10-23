@@ -1,21 +1,21 @@
 """
 Task 01.
-Задание 88 в, г.
-Дано натуральное число n:
-    в) Переставить первую и последнюю цифры числа n.
-    г) Приписать по единице в начало и в конец записи числа n.
+Task 88 c, d.
+Given a natural number n:
+     c) Rearrange the first and last digits of n.
+     d) Assign one digit to the beginning and the end of the record of the number n.
 """
-
+__author__ = 'Oleksandr Krynytskyi'
 
 def swap_digit(digit):
-    """в) Переставить первую и последнюю цифры числа n."""
+    """c) Rearrange the first and last digits of n."""
     swappable = [int(x) for x in str(digit)]
     swappable[-1], swappable[0] = swappable[0], swappable[-1]
     return int(''.join(map(str, swappable)))
 
 
 def write_digit(digit):
-    """г) Приписать по единице в начало и в конец записи числа n."""
+    """d) Assign one digit to the beginning and the end of the record of the number n."""
     return '1' + str(digit) + '1'
 
 def main():
