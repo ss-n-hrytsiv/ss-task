@@ -3,7 +3,6 @@ python 3.7
 author: Andrew Stanishevskyi
 """
 
-__author__ = "Andrii Stanishevs'kyi"
 
 def task_108(input_data):
     """
@@ -17,7 +16,7 @@ def task_108(input_data):
                 if two_to_i_power > input_data:
                     return two_to_i_power
         else:
-            return 'n must be bigger than 0'
+            print('n must be bigger than 0')
     else:
         raise Exception('Type integer')
 
