@@ -13,9 +13,9 @@ from tasks.task_226 import task_226_menu
 from tasks.task_322 import task_322_menu
 from tasks.task_331_a import task_331_a_menu
 from tasks.task_331_b import task_331_b_menu
-from tasks.task_num_107 import task_num_107
-from tasks.task_num_243_b import task_num_243_b
-from tasks.task_num_243_a import task_num_243_a
+from tasks.task_num_107 import task107_menu
+from tasks.task_num_243_b import task243_b_menu
+from tasks.task_num_243_a import task243_a_menu
 from tasks.task178_4 import task_178_4_menu
 from tasks.task178_5 import task_178_5_menu
 from tasks.task_559 import task_559_menu
@@ -44,9 +44,9 @@ if __name__ == "__main__":
             "task_87": (task_87_menu, 'Orest Furda       '),
             "task_88": (task88_a_b_menu, 'Marta Kozak       '),
             "task_322": (task_322_menu, 'Marta Kozak       '),
-            "task_num_107": (task_num_107, 'Maks Ivanov       '),
-            "task_num_243_a": (task_num_243_a, 'Maks Ivanov       '),
-            "task_num_243_b": (task_num_243_b, 'Maks Ivanov       '),
+            "task_num_107": (task107_menu, 'Maks Ivanov       '),
+            "task_num_243_a": (task243_a_menu, 'Maks Ivanov       '),
+            "task_num_243_b": (task243_b_menu, 'Maks Ivanov       '),
         }
    
         
