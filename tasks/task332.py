@@ -1,11 +1,10 @@
 """
 Task 02.
-Задание 332.
-Известно, что любое натуральное число можно представить
-в виде суммы не более чем четырех квадратов натуральных чисел или,
-что то же самое, в виде суммы четырех квадратов неотрицательных
-целых чисел (теорема Лагранжа). Дано натуральное n; указать такие
-неотрицательные x, y, z, t , что n = x^2 + y^2 + z^2 + t^2 .
+Task 332.
+It is known that any natural number can be represented in the form of a sum of
+no more than four squares of natural numbers or, what is the same, in the form
+of a sum of four squares of non-negative integers (Lagrange's theorem).
+Given a natural n; indicate such non-negative x, y, z, t , where n = x^2 + y^2 + z^2 + t^2 .
 """
 __author__ = 'Oleksandr Krynytskyi'
 
