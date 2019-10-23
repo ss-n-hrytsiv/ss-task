@@ -1,30 +1,28 @@
-# Дано натуральне число n.
-# a) з'ясувати, чи входить цифра 3 в запис числа n^2
-# b) змінити порядок цифр числа n на зворотній
 __author__ = 'Marta Kozak'
 
 def is_3_in_nn(number):
     '''find out whether '3' is in a number's square'''
+
     if not isinstance(number, int):
         raise ValueError("Please enter the number")
-    for i in range(len(str(number**2))):
-        if str(number**2)[i]=='3':
+
+    for digit in range(len(str(number**2))):
+        if str(number**2)[digit]=='3':
             return True
     return False
 
 
 def reverse_number(number):
     '''change the order of digits to the opposite'''
+
     if not isinstance(number, int):
         raise ValueError("Please enter the number")
-    number=str(number)
-    return number[::-1]
-    # reversed_num=0
-    # while number>0:
-    #     reversed_num=reversed_num*10+number%10
-    #     number=number//10
-    # return reversed_num
-
+    
+    reversed_num=0
+    while number>0:
+        reversed_num=reversed_num*10+number%10
+        number=number//10
+    return reversed_num
 
 def represent_function(function, function_doc, user_choice):
     while True:

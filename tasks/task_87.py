@@ -1,10 +1,10 @@
 # 87
-# Дано натуральні n, m. Отримати суму m останніх цифр числа n.
+# Given are natural n, m. Obtain the sum m of the last digits of the number n.
 __author__ = 'Orest Furda'
 
-def task_87(n, m):
-    """Дано натуральні n, m. Отримати суму m останніх цифр числа n."""
-    result = sum(n[-m:])
+def task_87(number, number_of_digits):
+    """Given are natural n, m. Obtain the sum m of the last digits of the number n."""
+    result = sum(number[-number_of_digits:])
 
     return result
 
@@ -18,18 +18,21 @@ def task_87_menu():
         print('Input only number')
         print('If you wnat to exit, just input smth from: q /quit / exit /stop /terminate')
         print('-' * 50)
-        user_input_n = input('Please input a first number(n): ')
-        if user_input_n.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
+        print('\n\n\n')
+
+        user_input_number = input('Please input a first number(n): ')
+
+        if user_input_number.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
             break
-        user_input_m = input('Please input a second number(m): ')
+
+        user_input_number_of_digits = input('Please input a second number(m): ')
 
         try:
-            n = list(map(int, user_input_n))
-            m = int(user_input_m)
-            print(task_87(n, m))
+            number = list(map(int, user_input_number))
+            number_of_digits = int(user_input_number_of_digits)
+            print(f"Sum m of the last digits of the number n = {task_87(number, number_of_digits)}")
+            print('\n\n\n')
         except ValueError:
-            # if user_input_n.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
-            #     break
             print('n - must be an int type!')
             continue
 
