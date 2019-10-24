@@ -3,11 +3,11 @@
 
 '''
 178
-Даны натуральные числа n, a_1, ..., a_n.
-Определить количество членов a_k последовательности a_1, ..., a_n:
+We habe natural numbers: n, a_1, ..., a_n.
+Get count of numbers of a_k sequence: {a_1, ..., a_n}:
 
-б) Кратных 3 и не кратных 5
-в) являющихся квадратами четных чисел
+b) Multiple of 3 but aren't multiple of 5
+c) Which are squares of even numbers
 '''
 
 __author__ = 'Stanislav Hrytcyshyn'
