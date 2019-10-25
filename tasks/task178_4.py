@@ -1,8 +1,8 @@
 """
-178.4
-Даны натуральные числа n, A1, ..., An.
-Определить количество членов Ak последовательности A1, ..., An
-удовлетворящих условию Ak < (Ak-1 + Ak+1) / 2.
+178(4).
+Given n natural numbers: A1, ..., An.
+Determine which members of ​​the sequence (Ak)
+satisfying the condition Ak < (Ak-1 + Ak+1) / 2.
 """
 __author__ = 'Valentyn Malenchak'
 
