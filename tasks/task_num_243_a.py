@@ -3,10 +3,8 @@ from math import sqrt
 __author__ = 'Maks Ivanov'
 
 def task_num_243_a(n):
-    """ Дано натуральное число n. Можно ли представить его в виде суммы двух квадратов натуральных чисел?
-        a) указать пару чисел х, у таких натуральных чисел, что n = x^2 + y^2
-        (Given a natural number n. Can it be represented as the sum of two squares of natural numbers?
-        indicate a pair of numbers x, such natural numbers that for n = x^2 + y^2) """
+    """ a) Given a natural number n. Can it be represented as the sum of two squares of natural numbers?
+        Indicate a pair of numbers x, such natural numbers that for n = x^2 + y^2 """
 
     res = []
     for x in range(int(sqrt(n)) + 1):
