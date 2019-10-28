@@ -1,5 +1,5 @@
 from tasks.task_88a_b import task88_a_b_menu
-from tasks.task_86_a import task86_a_b_menu
+from tasks.task_86_a_b import task86_a_b_menu
 from tasks.task_330 import task_330_menu
 from tasks.task178 import task178_menu
 from tasks.task554 import task554_menu
