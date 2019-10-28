@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../')
+
 import unittest
 from tasks.task_87 import task_87
 from tasks.task_226 import task_226
