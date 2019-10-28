@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 import unittest
 from tasks.task178_4 import get_count_of_elements_less_than_arithmetic_mean_of_its_neighbor
 from tasks.task178_5 import get_count_of_elements_by_condition
