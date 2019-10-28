@@ -8,14 +8,12 @@ def task_num_243_b(n):
         (Given a natural number n. Can it be represented as the sum of two squares of natural numbers?
         indicate all pairs of numbers x, such natural numbers)        )
     """
-
-
     res = []
 
     for x in range(int(sqrt(n)) + 1):
         for y in range(x, int(sqrt(n)) + 1):
             if x ** 2 + y ** 2 == n:
-                pair = f'{x} {y}'
+                pair = (x, y)
                 res.append(pair)
     if len(res) == 0:
         return "This number cannot be represented as the sum of two squares"

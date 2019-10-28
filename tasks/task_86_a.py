@@ -3,9 +3,8 @@ __author__ = 'Nazar Hrytsiv'
 
 def task_86_a(n):
     """Task 86_a: Have a natural number n how many digits in this number n"""
-
-    # n = input("Some natural number n, how many digits in this number n\n\n"
-    #           "Enter n: ")
+    if type(n) != int:
+        raise TypeError('Argument must be an integer type!')
     n = str(n)
     answer = len(list(n))
     return answer
@@ -13,8 +12,8 @@ def task_86_a(n):
 
 def task_86_b(n):
     '''Task 86_b: Have a natural number n count the sum of all digits in number n'''
-    # n = input("Some natural number n, calculate the sum of all digits in this number n\n\n"
-    #           "Enter n: ")
+    if type(n) != int:
+        raise TypeError('Argument must be an integer type!')
     n = str(n)
     return sum(map(int, n))
 

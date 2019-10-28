@@ -12,7 +12,7 @@ def task_num_243_a(n):
     for x in range(int(sqrt(n)) + 1):
         for y in range(x, int(sqrt(n)) + 1):
             if x ** 2 + y ** 2 == n:
-                pair = f'{x} {y}'
+                pair = (x, y)
                 res.append(pair)
     if len(res) == 0:
         return "This number can not be represented as the sum of two squares"
@@ -30,8 +30,8 @@ def task243_a_menu():
 
         user_number = input('\'Task 243a\' Input your natural number : ')
         try:
-            m = int(user_number)
-            print(task_num_243_a(m))
+            n = int(user_number)
+            print(task_num_243_a(n))
         except ValueError:
             if user_number.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
                 break
