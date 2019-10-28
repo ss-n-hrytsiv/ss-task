@@ -6,20 +6,16 @@ __author__ = 'Orest Furda'
 def task_559(number):
     """Given natural n. Find all smaller n numbers of Mersenne."""
 
-    num_mers = [(2 ** i - 1) for i in range(1, number + 1)]
-    simple_num = []
+    num_mers = []
+    counter = 1
+    while True:
+        expression = (2 ** counter - 1)
+        if expression > number:
+            break
+        num_mers.append(expression)
+        counter += 1
 
-    for count in range(2, number+1):
-        i = 2
-        limit = int(math.sqrt(count))
-        while i <= limit:
-            if count % i == 0:
-                break
-            i += 1
-        else:
-            simple_num.append(count)
-    simple_num_mers = [(2 ** i + 1) for i in simple_num]
-    return num_mers, simple_num_mers
+    return num_mers
 
 
 def task_559_menu():
@@ -37,9 +33,8 @@ def task_559_menu():
 
         try:
             number = int(user_input_number)
-            num_mers, simple_num_mers = task_559(number)
+            num_mers = task_559(number)
             print(f'Numbers of Mersenne, less then {number} = {num_mers}')
-            print(f'Simple numbers of Mersenne, less then {number} = {simple_num_mers}')
             print('\n')
         except ValueError:
             if user_input_number.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
