@@ -10,7 +10,7 @@ def task_559(number):
     counter = 1
     while True:
         expression = (2 ** counter - 1)
-        if expression > number:
+        if expression >= number:
             break
         num_mers.append(expression)
         counter += 1
