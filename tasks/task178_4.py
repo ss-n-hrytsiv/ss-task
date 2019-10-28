@@ -6,6 +6,7 @@ satisfying the condition Ak < (Ak-1 + Ak+1) / 2.
 """
 __author__ = 'Valentyn Malenchak'
 
+
 def get_count_of_elements_less_than_arithmetic_mean_of_its_neighbor(sequence):
     """
     Count how many integer numbers satisfy the condition
