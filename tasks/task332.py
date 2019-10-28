@@ -11,6 +11,9 @@ __author__ = 'Oleksandr Krynytskyi'
 
 def lagrange(digit):
     """Lagrange's four-square theorem"""
+    if digit <= 0:
+        raise ValueError('Digit must be natural number')
+
     result = []
     for _ in range(4):
         _ = int(digit ** 0.5)
