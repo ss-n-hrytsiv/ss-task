@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 import unittest
 from tasks.task_108 import task_108
 from tasks.task_331_a import task_331_a
@@ -12,7 +14,6 @@ class Test_tasks(unittest.TestCase):
             task_108('ssssss')
     def test_task_331_a(self):
         self.assertEqual(task_331_a(3), [1, 1, 1])  
-        self.assertEqual(task_331_a(-1), 'n must be bigger than 0')              
         with self.assertRaises(Exception):
             task_331_a('ssssss')
 
