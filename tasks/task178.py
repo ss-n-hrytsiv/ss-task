@@ -3,11 +3,11 @@
 
 '''
 178
-Даны натуральные числа n, a_1, ..., a_n.
-Определить количество членов a_k последовательности a_1, ..., a_n:
+We habe natural numbers: n, a_1, ..., a_n.
+Get count of numbers of a_k sequence: {a_1, ..., a_n}:
 
-б) Кратных 3 и не кратных 5
-в) являющихся квадратами четных чисел
+b) Multiple of 3 but aren't multiple of 5
+c) Which are squares of even numbers
 '''
 
 __author__ = 'Stanislav Hrytcyshyn'
@@ -40,7 +40,7 @@ def find_squares_of_even_numbers(input_list):
     except TypeError:
         return 'Argument should be an iterable object'
 
-    return len(list(filter(lambda x: math.sqrt(x) % 2 == 0, input_list)))
+    return len(list(filter(lambda x: x ** 2 % 2 == 0, input_list)))
 
 
 def represent_function(function, function_doc, resulted_text):

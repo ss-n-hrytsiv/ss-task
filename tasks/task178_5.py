@@ -1,8 +1,8 @@
 """
-178.5
-Даны натуральные числа n, A1, ..., An.
-Определить количество членов Ak последовательности A1, ..., An
-удовлетворящих условию 2^k < Ak < k!.
+178(5).
+Given n natural numbers: A1, ..., An.
+Determine which members of ​​the sequence (Ak)
+satisfying the condition 2 ^ k < Ak < k!.
 """
 __author__ = 'Valentyn Malenchak'
 

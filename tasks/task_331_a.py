@@ -2,7 +2,6 @@
 python 3.7
 author: Andrew Stanishevskyi
 """
-__author__ = "Andrii Stanishevs'kyi"
 
 
 def task_331_a(input_data):
@@ -21,10 +20,10 @@ def task_331_a(input_data):
                         if x_arg ** 2 + y_arg ** 2 + z_arg ** 2 == input_data:
                             return [x_arg, y_arg, z_arg]
 
-            return 'There is no x, y, z'
+            print('There is no x, y, z')
 
         else:
-            return 'n must be bigger than 0'
+            print('n must be bigger than 0')
 
     else:
         raise Exception('Type integer')

@@ -1,15 +1,15 @@
 __author__ = 'Marta Kozak'
 
 def max_sum_dividers():
-    '''find a natural number in [1, 10000 with a maximum sum of it's dividers'''
+    '''find a natural number in [1, 10000] with a maximum sum of it's divisors'''
 
     sums = {}
-    for i in range(1, 10000):
-        sums[i] = 0
+    for dividend in range(1, 10000):
+        sums[dividend] = 0
     
-        for j in range(1, i + 1):
-            if i % j == 0:
-                sums[i] += j
+        for divisor in range(1, dividend + 1):
+            if dividend % divisor == 0:
+                sums[dividend] += divisor
     
     return max(sums, key=sums.get)
 
@@ -28,7 +28,7 @@ def represent_function(function, function_doc):
         try:
             user_input = int(user_input)
             if user_input==1:
-                print("A number with a maximum sum of dividers in [1, 10000]", max_sum_dividers())
+                print("A number with a maximum sum of dividers in [1, 10000] is ", max_sum_dividers())
             else:
                 continue
 

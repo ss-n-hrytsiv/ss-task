@@ -1,5 +1,6 @@
 __author__ = 'Nazar Hrytsiv'
 
+
 def task330():
     """Task 330 Have a number n. find all ideal number lower then n"""
 
@@ -29,7 +30,7 @@ def represent_function(function, function_doc):
 
         try:
             user_input = int(user_input)
-            if user_input==1:
+            if user_input == 1:
                 print("A list of numbers lower then n and is ideal", task330())
             else:
                 continue

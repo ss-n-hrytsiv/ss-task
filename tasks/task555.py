@@ -1,8 +1,9 @@
 """
-Треугольником Паскаля называется числовой треугольник в котором по краям стоят
-еденицы, а каждое число внутри равно сумме двух стоящих над ним в ближайшей
-строке сверху.
-Дано число n. Получить первые n строк треугольника Паскаля.
+555.
+Pascal's triangle is a numerical triangle which has '1' at the edges and
+each number inside is equal to the sum of two numbers standing above it
+in the nearest line above.
+Given the number n. Get the first n lines of a Pascal triangle.
 """
 
 

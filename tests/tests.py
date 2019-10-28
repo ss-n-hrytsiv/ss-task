@@ -2,7 +2,6 @@ import unittest
 from tasks.task_num_107 import task_num_107
 from tasks.task_num_243_a import task_num_243_a
 from tasks.task_num_243_b import task_num_243_b
-from unittest.mock import patch
 
 
 class TestAlgoTasks(unittest.TestCase):

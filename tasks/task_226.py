@@ -1,17 +1,21 @@
 # 226
-# Дано натуральні n, m. Отримати всі їх натуральні спільні кратні, менші mn
+# Given are natural n, m. Get all their natural common multiples, smaller mn.
 __author__ = 'Orest Furda'
 
-def task_226(n, m):
-    """Дано натуральні n, m. Отримати всі їх натуральні спільні кратні, менші mn."""
 
-    mn = m * n
-    s_k_n = [i for i in range(1, mn + 1) if i % n == 0]
-    s_k_m = [i for i in range(1, mn + 1) if i % m == 0]
+def task_226(first_number, second_number):
+    """Given are natural n, m. Get all their natural common multiples, smaller mn."""
 
-    s_k = sorted(list(set(s_k_n) & set(s_k_m)))
+    product_of_numbers = first_number * second_number
+    common_multiples_for_the_first_number = [i for i in range(
+        1, product_of_numbers + 1) if i % first_number == 0]
+    common_multiples_for_the_second_number = [i for i in range(1, product_of_numbers + 1)
+                                              if i % second_number == 0]
 
-    return s_k
+    common_multiples_for_the_both_numbers = sorted(list(set(
+        common_multiples_for_the_first_number) & set(common_multiples_for_the_second_number)))
+
+    return common_multiples_for_the_both_numbers
 
 
 def task_226_menu():
@@ -24,21 +28,23 @@ def task_226_menu():
         print('If you wnat to exit, just input smth from: q /quit / exit /stop /terminate')
         print('-' * 50)
         print('\n\n\n')
-        user_input_n = input('Please input a first number(n): ')
-        if user_input_n.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
+
+        user_input_first_number = input('Please input a first number(n): ')
+
+        if user_input_first_number.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
             break
-        user_input_m = input('Please input a second number(m): ')
+
+        user_input_second_number = input('Please input a second number(m): ')
 
         try:
-
-            n = int(user_input_n)
-            m = int(user_input_m)
-            s_k = task_226(n, m)
-            print(f'Спільні кратні для {n} i {m}, менші за {m*n} = {s_k}')
+            first_number = int(user_input_first_number)
+            second_number = int(user_input_second_number)
+            common_multiples_for_the_both_numbers = task_226(
+                first_number, second_number)
+            print(
+                f'Common multiples for {first_number} and {second_number}, less then {first_number * second_number} = {common_multiples_for_the_both_numbers}')
             print('\n\n\n')
         except ValueError:
-            # if user_input_n.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
-            #     break
             print('n - must be an int type!')
             continue
 
