@@ -6,8 +6,7 @@ author: Andrew Stanishevskyi
 
 def task_108(input_data):
     """
-    Дано натуральное число n. Получить наименьшее число
-    вида 2^r , превосходящее n.
+    There is natural number n. Task: find the smallest 2^r-type number, which is bigger than n.
     """
     if isinstance(input_data, int):
         if input_data > 0:

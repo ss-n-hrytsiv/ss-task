@@ -6,10 +6,8 @@ author: Andrew Stanishevskyi
 
 def task_331_a(input_data):
     """
-    Дано натуральное число n. Можно ли представить его в
-    виде суммы трех квадратов натуральных чисел? Если можно,
-    то указать тройку x, y, z таких натуральных чисел, что
-    n = x^2 + y^2 + z^2
+    There is natural number n. Is it possible to represent it as a sum of tree squared natural numbers?
+    If it`s possible, return the triplet of natural numbers x, y, z, where n = x^2 + y^2 + z^2 .
     """
     if isinstance(input_data, int):
         if input_data > 0:
