@@ -1,7 +1,6 @@
 import unittest
 import sys
 sys.path.append('../')
-# from tasks.task_num_107 import task_num_107
 from tasks.task_num_243_a import task_num_243_a
 from tasks.task_num_243_b import task_num_243_b
 from tasks.task_num_107 import task_num_107
