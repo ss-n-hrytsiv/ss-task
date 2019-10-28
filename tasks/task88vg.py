@@ -9,6 +9,8 @@ __author__ = 'Oleksandr Krynytskyi'
 
 def swap_digit(digit):
     """c) Rearrange the first and last digits of n."""
+    if type(digit) != int:
+        raise TypeError('digit should be an int type')
     swappable = [int(x) for x in str(digit)]
     swappable[-1], swappable[0] = swappable[0], swappable[-1]
     return int(''.join(map(str, swappable)))
@@ -16,7 +18,10 @@ def swap_digit(digit):
 
 def write_digit(digit):
     """d) Assign one digit to the beginning and the end of the record of the number n."""
-    return '1' + str(digit) + '1'
+    if type(digit) != str:
+        raise TypeError('Error, must be string')
+    if int(digit):
+        return '1' + str(digit) + '1'
 
 def main():
     """Main function to execute this module"""
