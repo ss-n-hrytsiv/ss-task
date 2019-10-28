@@ -1,7 +1,7 @@
 import unittest
-from task_108 import task_108
-from task_331_a import task_331_a
-from task_331_b import task_331_b
+from tasks.task_108 import task_108
+from tasks.task_331_a import task_331_a
+from tasks.task_331_b import task_331_b
 
 class Test_tasks(unittest.TestCase):
 
