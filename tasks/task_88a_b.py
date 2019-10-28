@@ -1,6 +1,6 @@
 __author__ = 'Marta Kozak'
 
-def is_3_in_nn(number):
+def is_3_in_number_squared(number):
     '''find out whether '3' is in a number's square'''
 
     if not isinstance(number, int):
