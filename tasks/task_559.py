@@ -1,15 +1,15 @@
 # 559
-# Дано натуральне n. Знайти всі, менші n числа Мерсенна.
+# Given natural n. Find all smaller n numbers of Mersenne.
 import math
 __author__ = 'Orest Furda'
 
-def task_559(n):
-    """Дано натуральне n. Знайти всі, менші n числа Мерсенна."""
+def task_559(number):
+    """Given natural n. Find all smaller n numbers of Mersenne."""
 
-    num_mers = [(2 ** i - 1) for i in range(1, n + 1)]
+    num_mers = [(2 ** i - 1) for i in range(1, number + 1)]
     simple_num = []
 
-    for count in range(2, n+1):
+    for count in range(2, number+1):
         i = 2
         limit = int(math.sqrt(count))
         while i <= limit:
@@ -32,16 +32,17 @@ def task_559_menu():
         print('If you wnat to exit, just input smth from: q /quit / exit /stop /terminate')
         print('-' * 50)
         print('\n')
-        user_input_n = input('Please input a number(n): ')
+
+        user_input_number = input('Please input a number(n): ')
 
         try:
-            n = int(user_input_n)
-            num_mers, simple_num_mers = task_559(n)
-            print(f'Числа Мерсенна, менші за {n} = {num_mers}')
-            print(f'Прості числа Мерсенна, менші за {n} = {simple_num_mers}')
+            number = int(user_input_number)
+            num_mers, simple_num_mers = task_559(number)
+            print(f'Numbers of Mersenne, less then {number} = {num_mers}')
+            print(f'Simple numbers of Mersenne, less then {number} = {simple_num_mers}')
             print('\n')
         except ValueError:
-            if user_input_n.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
+            if user_input_number.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:
                 break
             print('n - must be an int type!')
             continue

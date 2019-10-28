@@ -3,9 +3,9 @@
 
 '''
 554
-Дано натуральное число n. Получить все пифагоровы
-тройки натуральних чисел, каждое из которых превосходит n, т. е.
-все такие тройки натуральных чисел a, b, c, что:
+We have a natural number - n. Get all pythagorean triples 
+which satisfies an equation, so
+all such triples of natural numbers {a, b, c}:
     a^2 + b^2 = c^2     (a <= b <= c <= n)
 '''
 __author__ = 'Stanislav Hrytcyshyn'
@@ -15,7 +15,7 @@ from itertools import product
 
 def find_all_pythagorean_triple(n):
     '''
-    returns all pythagorean triple 
+    returns all pythagorean triples
     which satisfies an equation:
     a^2 + b^2 = c^2     (a <= b <= c <= n)
     '''

@@ -4,9 +4,7 @@
 
 
 def task_num_107(abra):
-    """ Дано целое число m > 1 Получить наибольшое целое к, при котором 4^к < m
-        (We have a natural number m > 1. Get the greatest integer k, at which 4^k < m)
-    """
+    """ We have a natural number m > 1. Get the greatest integer k, at which 4^k < m """
 
     counter = 1
     a = 4

@@ -3,20 +3,21 @@ __author__ = 'Nazar Hrytsiv'
 
 def task_86_a(n):
     """Task 86_a: Have a natural number n how many digits in this number n"""
-
-    # n = input("Some natural number n, how many digits in this number n\n\n"
-    #           "Enter n: ")
-    n = str(n)
-    answer = len(list(n))
-    return answer
+    if isinstance(n, int):
+        n = str(n)
+        answer = len(list(n))
+        return answer
+    else:
+        raise TypeError('Argument must be an integer type!')
 
 
 def task_86_b(n):
-    '''Task 86_b: Have a natural number n count the sum of all digits in number n'''
-    # n = input("Some natural number n, calculate the sum of all digits in this number n\n\n"
-    #           "Enter n: ")
-    n = str(n)
-    return sum(map(int, n))
+    """Task 86_b: Have a natural number n count the sum of all digits in number n"""
+    if isinstance(n, int):
+        n = str(n)
+        return sum(map(int, n))
+    else:
+        raise TypeError('Argument must be an integer type!')
 
 
 def represent_function(function, function_doc, user_choice):

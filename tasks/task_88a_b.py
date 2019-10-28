@@ -38,7 +38,7 @@ def represent_function(function, function_doc, user_choice):
         try:
             user_input = int(user_input)
             if user_choice=='a':
-                print(user_input, "has a '3' in it's square: ", is_3_in_nn(user_input))
+                print(user_input, "has a '3' in it's square: ", is_3_in_number_squared(user_input))
             elif user_choice=='b':
                 print("Reversing ", user_input, "... Result: ", reverse_number(user_input))
 
@@ -55,7 +55,7 @@ def task88_a_b_menu():
         chosen_task = input('Select sub-task - [a / b]: ')
     
         if chosen_task.lower() == 'a':
-            represent_function(is_3_in_nn, is_3_in_nn.__doc__, 'a')
+            represent_function(is_3_in_number_squared, is_3_in_number_squared.__doc__, 'a')
         elif chosen_task.lower() == 'b':
             represent_function(reverse_number, reverse_number.__doc__, 'b')
         elif chosen_task.lower() in ['q', 'quit', 'exit', 'stop', 'terminate']:

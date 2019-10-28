@@ -2,7 +2,6 @@
 python 3.7
 author: Andrew Stanishevskyi
 """
-__author__ = "Andrii Stanishevs'kyi"
 
 
 def task_331_b(input_data):
@@ -14,6 +13,7 @@ def task_331_b(input_data):
     """
 
     if isinstance(input_data, int):
+
         if input_data > 0:
 
             output = []
@@ -25,7 +25,7 @@ def task_331_b(input_data):
 
             return output
         else:
-            return 'n must be bigger than 0'
+            print('n must be bigger than 0')
     else:
         raise Exception('Type integer')
 
