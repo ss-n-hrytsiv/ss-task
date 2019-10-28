@@ -1,6 +1,5 @@
 # 559
 # Given natural n. Find all smaller n numbers of Mersenne.
-import math
 __author__ = 'Orest Furda'
 
 def task_559(number):
