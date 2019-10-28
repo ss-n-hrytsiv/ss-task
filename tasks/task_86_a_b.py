@@ -2,7 +2,11 @@ __author__ = 'Nazar Hrytsiv'
 
 
 def task_86_a(n):
-    """Task 86_a: Have a natural number n how many digits in this number n"""
+    """
+    Task 86_a: Have a natural number n how many digits in this number n
+    :param n natural number:
+    :return count of digits:
+    """
     if isinstance(n, int):
         n = str(n)
         answer = len(list(n))
@@ -12,7 +16,11 @@ def task_86_a(n):
 
 
 def task_86_b(n):
-    """Task 86_b: Have a natural number n count the sum of all digits in number n"""
+    """
+    Task 86_b: Have a natural number n count the sum of all digits in number n
+    :param n is a natural number:
+    :return count the sum of digits :
+    """
     if isinstance(n, int):
         n = str(n)
         return sum(map(int, n))
