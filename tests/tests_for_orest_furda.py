@@ -17,9 +17,9 @@ class TestAlgorithmTaskFunctions(unittest.TestCase):
         self.assertEqual(task_226(9, 21), [63, 126, 189])
 
     def test_task_559(self):
-        self.assertEqual(task_559(4)[0], [1, 3, 7, 15])
-        self.assertEqual(task_559(10)[0],
-                         [1, 3, 7, 15, 31, 63, 127, 255, 511, 1023])
+        self.assertEqual(task_559(786), [1, 3, 7, 15, 31, 63, 127, 255, 511])
+        self.assertEqual(task_559(47), [1, 3, 7, 15, 31])
+        self.assertEqual(task_559(127), [1, 3, 7, 15, 31, 63])
 
 
 if __name__ == '__main__':
