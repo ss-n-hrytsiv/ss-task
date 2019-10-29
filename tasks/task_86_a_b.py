@@ -42,7 +42,7 @@ def represent_function(function, function_doc, user_choice):
         try:
             user_input = int(user_input)
             if user_choice == 'a':
-                print(user_input, "Count of digits in number is: ", task_86_a(user_input))
+                print("Count of digits in number is: ", task_86_a(user_input))
             elif user_choice == 'b':
                 print("Sum of all digits in number ", user_input, "... Result: ", task_86_b(user_input))
 
