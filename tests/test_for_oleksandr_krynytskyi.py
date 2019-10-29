@@ -34,11 +34,11 @@ class TestTasks(unittest.TestCase):
     def test_types(self):
         # Test if values are incorrect
 
-        self.assertRaises(TypeError, swap_digit, 'any string')
-        self.assertRaises(TypeError, swap_digit, None)
-        self.assertRaises(TypeError, swap_digit, False)
-        self.assertRaises(TypeError, swap_digit, {})
-        self.assertRaises(TypeError, swap_digit, ' 1 0')
+        self.assertRaises(Exception, swap_digit, 'any string')
+        self.assertRaises(Exception, swap_digit, None)
+        self.assertRaises(ValueError, swap_digit, False)
+        self.assertRaises(Exception, swap_digit, {})
+        self.assertRaises(Exception, swap_digit, ' 1 0')
 
         self.assertRaises(TypeError, write_digit, 123)
         self.assertRaises(TypeError, write_digit, {})
